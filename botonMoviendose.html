@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>boton moviendose</title>
+<style type="text/css">
+	html,body{
+		height: 500px;
+		width:800px;
+	}
+	#botoncillo{
+		height: 50px;
+		width:50px;
+	}
+</style>
+</head>
+<body>
+	<h1>Has engañado a tu novia?</h1>
+<input type="button" id='botoncillo' value='NO' name="">
+<script type="text/javascript">
+	var anchoPagina=0,alturaPagina=0;
+	var x=0,y=0;
+	window.onload=function(){
+		//Al inspeccionar body, se muestra width,height
+		//alert('hola');
+	document.getElementById('botoncillo').
+	addEventListener('mousemove',function(){
+		//alert('cursor encima boton');
+		x=Math.floor(Math.random()*800);
+		y=Math.floor(Math.random()*500);
+		this.style.position='absolute';
+		this.style.left=x+'px';
+		this.style.top=y+'px';
+	});
+	}//cierre onload
+</script>
+</body>
+</html>
